@@ -84,12 +84,17 @@ const graduates = [
 
 Once you have the new array created, log the result. */
 
-const universities = [];
-  for (let university = 0; university < graduates.length; university++) {
-    universities.push(graduates[university].university);
-  }
-universities.sort();
-console.log(universities);
+const universities = (graduates) => 
+  graduates.map(ele => ele.university)
+    console.log(universities(graduates));
+
+    // const universities = [];
+    //   for (let university = 0; university < graduates.length; university++) {
+    //     universities.push(graduates[university].university);
+    //   }
+    // universities.sort();
+    // console.log(universities);
+
       
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. This will be an array of strings.
 
@@ -97,6 +102,7 @@ The resulting contact information strings should have a space between the first 
 "Josh josh@example.com"
 
 Log the result of your new array. */
+
 const contactInfo = [];
   for (let student = 0; student < graduates.length; student++) {
     contactInfo.push(`${graduates[student].first_name} ${graduates[student].email}`);
