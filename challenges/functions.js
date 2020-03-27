@@ -8,7 +8,7 @@
 */
 
 function consume(arg1, arg2, cb) {
-  console.log(cb(arg1, arg2));
+  return cb(arg1, arg2);
 }
 
 /* Step 2: Create several functions to callback with consume();
