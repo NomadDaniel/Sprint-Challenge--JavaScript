@@ -22,21 +22,31 @@ You will notice there are several JavaScript files being brought into the index.
 
 In meeting the minimum viable product (MVP) specifications listed below, you should have a console full of correct responses to the problems given.
 
-## Self-Study Questions
-
+Self-Study Questions
 Demonstrate your understanding of this week's concepts by answering the following free-form questions.
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
-1. Describe the biggest difference between `.forEach` & `.map`.
+1. Describe the biggest difference between .forEach & .map.
+Answer: forEach does not return a new array but map does.
 
 2. What is the difference between a function and a method?
+Answer: Technically they are both functions, but a method is a function that exists in an object.
 
 3. What is closure?
+Answer: Closure is essentially the close-loop system that dictates how hierarchy works, children inherit from parents but not the other way around.
 
 4. Describe the four rules of the 'this' keyword.
+Answer:
+  1) Windows/Global binding -> when no context is given, .this will point to where JavaScript lives on the terminal...it is massive!
+  2) Implicit binding -> look to the left of the dot when a function is invoked, .this points there. 80% of use cases are implicit binding for .this.
+  3) New keyword binding (using a constructor) -> when we use a constructor function, .this now points to the new instance of "this" that is created by that specific object.
+  4) Explicit binding -> use .call, .apply, or .bind to override a constructor function. 
 
-5. Why do we need super() in an extended class?
+5. Why do we need super() in an extended class? 
+Answer: Perhaps this makes sense -> classes(extend, super) === prototypes(.call, .create).
+To be specific, 'super' takes the place of '.create' when using classes instead of prototypes.
+
 
 ## Project Set up
 
